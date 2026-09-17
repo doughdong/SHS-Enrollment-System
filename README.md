@@ -1,15 +1,18 @@
 # SHS Enrollment System
 
-A professional desktop-based Senior High School Enrollment System developed with **Python, PyQt5, and SQLite**.
+A professional desktop-based Senior High School Enrollment System developed as a **college academic project** using **Python, PyQt5, and SQLite**.
 
 ## Overview
 
-The system manages SHS enrollment through a modern desktop interface. It provides student registration, validation, track-and-strand selection, SQLite storage, student record search, editing and deletion, and practical enrollment settings.
+The **SHS Enrollment System** is a desktop application designed to manage the enrollment information of Senior High School students. It provides a structured interface for registering students, validating enrollment information, selecting grade levels, tracks, and strands, and managing stored student records.
+
+The project demonstrates practical programming concepts including graphical user interface development, input validation, CRUD operations, SQLite database management, and data persistence.
 
 ## Features
 
 - Modern desktop GUI
 - Student enrollment
+- Student information management
 - Input validation
 - Grade 11 and Grade 12
 - Academic and TVL tracks
@@ -25,12 +28,14 @@ The system manages SHS enrollment through a modern desktop interface. It provide
 ## Tracks and Strands
 
 ### Academic
+
 - STEM
 - ABM
 - HUMSS
 - GAS
 
 ### TVL
+
 - ICT - Programming
 - ICT - CSS
 
@@ -45,7 +50,7 @@ The system manages SHS enrollment through a modern desktop interface. It provide
 ## Project Structure
 
 ```text
-SHS_Enrollment_System/
+SHS-Enrollment-System/
 ├── main.py
 ├── database.py
 ├── enrollment.py
@@ -63,21 +68,24 @@ SHS_Enrollment_System/
 | Module | Responsibility |
 |---|---|
 | `main.py` | Starts the application and initializes the database |
-| `database.py` | SQLite tables and CRUD/settings operations |
-| `enrollment.py` | Enrollment rules and validation |
-| `gui.py` | PyQt5 interface and user interaction |
+| `database.py` | Handles SQLite database operations and CRUD functionality |
+| `enrollment.py` | Handles enrollment rules and input validation |
+| `gui.py` | Provides the PyQt5 interface and user interaction |
 
 ## Database
 
-The application creates `shs_enrollment.db` automatically. It contains `students` and `settings` tables. The database file is excluded from GitHub through `.gitignore` so local student data is not published.
+The application uses **SQLite** for local data storage. The database is initialized automatically when the application starts.
+
+Student information is stored locally, allowing enrollment records to remain available between application sessions. The database file is excluded from GitHub through `.gitignore` so that local student data is not accidentally published.
 
 ## Installation
 
-1. Open the project in PyCharm.
-2. Create or select a Python interpreter/virtual environment.
-3. Install the dependency:
+1. Clone or download the repository.
+2. Open the project in **PyCharm** or another Python IDE.
+3. Create or select a Python interpreter/virtual environment.
+4. Install the required dependency:
 
-```text
+```bash
 pip install -r requirements.txt
 ```
 
@@ -85,7 +93,13 @@ SQLite is included with Python and does not require a separate installation.
 
 ## Run
 
-In PyCharm, open `main.py`, right-click, and select **Run 'main'**.
+In PyCharm:
+
+1. Open `main.py`.
+2. Right-click the file.
+3. Select **Run 'main'**.
+
+The application will initialize the local database and open the enrollment interface.
 
 ## Enrollment Workflow
 
@@ -113,7 +127,7 @@ Enrollment Successful
 
 ## Settings
 
-The Settings page provides real system configuration:
+The system includes enrollment-related settings such as:
 
 - School Name
 - School Year
@@ -121,11 +135,39 @@ The Settings page provides real system configuration:
 
 When enrollment is set to **CLOSED**, new enrollment records are blocked while existing records remain available.
 
+## Academic Purpose
+
+This project was developed as part of a **college academic/software development project**. The application is intended to demonstrate the practical use of programming concepts by applying them to a Senior High School enrollment scenario.
+
+The project focuses on:
+
+- Python programming
+- PyQt5 GUI development
+- Form validation
+- CRUD operations
+- SQLite database management
+- Data persistence
+- Basic software organization
+
 ## Public GitHub Safety
 
-Do not publish real student names, addresses, contact numbers, passwords, credentials, or other private information. The local SQLite database is intentionally ignored by Git.
+This repository is public and intended for academic/project demonstration.
+
+Do **not** publish real student:
+
+- Names
+- Addresses
+- Contact numbers
+- Passwords
+- Credentials
+- Identification numbers
+- Other private or sensitive information
+
+The local SQLite database is intentionally excluded from GitHub through `.gitignore`.
 
 ## Future Improvements
+
+Possible future improvements include:
 
 - Administrator authentication
 - Password hashing
@@ -134,7 +176,12 @@ Do not publish real student names, addresses, contact numbers, passwords, creden
 - CSV/Excel export
 - Role-based access
 - Audit logs
+- Improved reporting features
 
 ## License
 
-For educational and academic use.
+For **educational and academic use**.
+
+## Author
+
+Developed as a college academic project.
